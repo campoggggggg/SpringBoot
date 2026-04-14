@@ -1,10 +1,10 @@
-package com.example.todolist2;
+package com.example.todolist;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Todolist2ApplicationTests {
+class TodolistApplicationTests {
 
 	@Test
 	void contextLoads() {
