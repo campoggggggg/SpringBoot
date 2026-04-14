@@ -13,6 +13,7 @@ import jakarta.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+
 public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

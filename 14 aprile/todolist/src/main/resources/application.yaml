@@ -1,3 +1,18 @@
 spring:
   application:
-    name: todolist2
+    name: todolist
+
+  datasource:
+    url: jdbc:mysql://localhost:8889/todolist
+    username: root
+    password: Gastly1!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  
+  # Configurazione server
+  # server:
+  #   port: 8080
