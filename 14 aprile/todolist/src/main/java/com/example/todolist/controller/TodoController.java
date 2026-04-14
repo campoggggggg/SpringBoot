@@ -1,7 +1,7 @@
 package com.example.todolist.controller;
 
-import com.example.todolist2.model.Todo;
-import com.example.todolist2.service.TodoService;
+import com.example.todolist.model.Todo;
+import com.example.todolist.service.TodoService;
 
 import java.util.List;
 
