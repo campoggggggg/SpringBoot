@@ -1,0 +1,15 @@
+# 1. Base image leggera
+FROM python:3.9-alpine
+
+# 2. definzione cartella di lavoro
+WORKDIR /app
+
+# 3. Ottimizzazione cache: prima i requisiti (fingiamo di averne)
+# COPY requirements.txt .
+# RUN pip install -r requirements.txt
+
+# 4 Copia del codice (cambia spesso quindi sta alla fine)
+COPY app.py .
+
+# 5. Comando di esecuzione
+CMD ["python", "app.py"]

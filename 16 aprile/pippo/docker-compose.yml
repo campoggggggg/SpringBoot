@@ -1,0 +1,22 @@
+services:
+  db-mysql:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mio_db
+      MYSQL_USER: utente
+      MYSQL_PASSWORD: password
+    ports:
+      - "3307:3306"
+
+  web-app:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    environment:
+      - MYSQL_HOST=db-mysql
+      - MYSQL_USER=utente
+      - MYSQL_PASSWORD=password
+    depends_on:
+      - db-mysql
